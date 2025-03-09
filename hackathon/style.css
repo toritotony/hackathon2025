@@ -1,0 +1,560 @@
+* {
+  font-family: 'Raleway', sans-serif;
+}
+
+body{
+    background-color: #f8f4ef;
+
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  gap: 1em;
+  width: 100%;
+  padding: 20px 10%;
+  background-image: url(backgroundImg/background2.png);
+}
+
+.logo-link {
+  margin-right: auto;
+}
+
+header img {
+  height: 7em;
+    max-height: 5%;
+    justify-self: left;
+    margin-right: auto;
+}
+
+header div{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-right: 1px black solid;
+    padding-right: 20px;
+}  
+
+/*
+element for map
+
+*/
+
+/* Basic Reset */
+body, h3, h4, p, ol, li, a {
+  margin: 0;
+  padding: 0;
+}
+
+/* Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Flex Container Layout */
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;  /* Makes both children equal in height */
+  width: 100%;
+  padding: 0 20px 0 0;
+  background-color: black;
+}
+
+/* Left Side Styling */
+#leftSide {
+  flex: 1;               /* Takes equal space as the map */
+  padding: 20px;
+  background-color: white;
+}
+
+/* Map Styling */
+#map {
+  flex: 1;      /* Ensures it fills available space in flex container */
+  height: 800px;         /* Fixed height for the map */
+}
+
+
+#conservationListSection {
+  max-height: 650px;
+  overflow-y: auto;
+}
+
+/* Remove Default List Styling */
+.no-list-style {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* Easement Box Styling */
+.easement-box {
+  margin-bottom: 0.5em;
+  padding: 0.2em 0.5em;
+  border: none;  /* Removed border */
+  border-radius: 4px;
+  background-color: white;
+  width: 100%;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+/* Easement Item Styling */
+.easement-item {
+  display: block;
+  font-size: 1.1em;
+  color: #17836f;
+  font-weight: bold;
+  padding: 0.2em;
+  text-decoration: none;
+}
+
+/* Hover Effects: Background changes to light gray, no underline */
+.easement-item:hover {
+  background-color: #f2f2f2;
+  text-decoration: none;
+}
+/* end map */
+/* Ensure consistent box sizing */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+.donate-btn {
+    display: inline-flex;           /* keeps the element sized around its content */
+    align-items: center;           /* vertically center the text */
+    justify-content: center;       /* horizontally center the text */
+    background-color: #cc6600;   
+    border-radius: 8px;
+    padding: 4px 8px;              /* Smaller top/bottom (4px) and left/right (8px) padding */
+    line-height: 1;                /* Avoid extra spacing from default line-height */
+    transition: background-color 0.3s ease;
+    /*margin: auto;*/                  /* center within container if allowed */
+}
+
+.donate-btn a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  display: block;
+}
+
+.donate-btn:hover {
+  background-color: #cc6600; 
+}
+
+.banner {
+    width: 100%;       /* Make it span the full width of its container */
+    height: auto;      /* Keep the aspect ratio */
+    display: block;    /* Remove any extra spacing below the image (inline elements can add a small gap) */
+  }
+
+
+/* Container wrapper (optional) */
+.content-wrapper {
+    max-width: 700px;  /* set a comfortable max width */
+    margin: 0 auto;    /* center the content */
+    padding: 20px;
+    font-family: 'Raleway', sans-serif; /* adjust font-family as needed */
+  }
+/* Heading style */
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.5rem;
+  color: #4d1b00;            /* Dark brown */
+  text-transform: uppercase; /* Uppercase letters */
+  font-weight: 600;          /* Slightly less bold */
+  margin-bottom: 1rem;       /* Spacing below the heading */
+  letter-spacing: 1px;       /* Improve readability */
+}
+  
+  /* Custom paragraph elements */
+  p1, p2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    display: block;       /* ensure each custom tag behaves like a block element */
+    font-size: 1rem;      /* base text size */
+    line-height: 1.6;     /* comfortable line spacing */
+    color: #263637;          /* dark gray text color */
+    margin-bottom: 1.25rem; /* spacing between paragraphs */
+  }
+
+
+
+  /* Basic Reset & Box Sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Basic Reset & Box Sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/**/
+/* Base Navbar */
+.navbar {
+  width: 100%;
+  background-color: #17836f;
+  color: #fff;
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 9000;
+}
+
+/* Navbar Container */
+.container-fluid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Hide Hamburger Button on Desktop */
+.navbar-toggler {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.75rem;
+  cursor: pointer;
+}
+
+/* Navbar Navigation */
+.navbar-nav {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Navbar Items */
+.nav-item {
+  position: relative;
+}
+
+/* Navbar Links */
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+/* Dropdown Arrow Icon */
+.dropdown-icon {
+  font-size: 0.8rem;
+  margin-left: 0.4rem;
+}
+
+/* Active Link */
+.nav-link.active {
+  color: #ffc107;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  list-style: none;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  min-width: 200px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+/* Dropdown Items */
+.dropdown-menu .dropdown-item {
+  display: block;
+  padding: 0.75rem 1rem;
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #17836f;
+  color: #fff;
+}
+
+/* Show Dropdown on Hover (Desktop) */
+@media (min-width: 992px) {
+  .dropdown:hover > .dropdown-menu {
+    display: block;
+  }
+}
+
+/* Mobile Navbar */
+@media (max-width: 991px) {
+  .navbar-toggler {
+    display: block;
+  }
+
+  .navbar-collapse {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #17836f;
+    padding: 0.5rem 0;
+  }
+
+  .navbar-collapse.show {
+    display: flex;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .dropdown-menu {
+    position: static;
+    display: none;
+    width: 100%;
+    box-shadow: none;
+  }
+
+  .dropdown:hover > .dropdown-menu {
+    display: block;
+  }
+}
+/* start search */
+
+/* Container for Sorting & Search (flush and aligned) */
+.sort-search-container {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 1rem;
+}
+
+/* Shared styling for both Sorting and Search sections */
+.sort-container,
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #f1f1f1; /* Optional background to visually group items */
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+/* Label styling */
+.sort-container label,
+.search-container label {
+  font-weight: bold;
+}
+
+/* Select and Input styling */
+.sort-container select,
+.search-container input[type="text"] {
+  padding: 0.4rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Button styling (common for both sections) */
+.sort-container button,
+.search-container button {
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #17836f;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Optional: Adjust button hover state */
+.sort-container button:hover,
+.search-container button:hover {
+  background-color: #146754;
+}
+/*end search*/
+
+#conservationList {
+  list-style: none;
+  padding-left: 0;
+}
+
+.social-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+.social-img {
+  width: 32px; /* or your desired size */
+  height: auto;
+}
+
+/* Centered modal with white, rounded background */
+/* Modal container (hidden by default) */
+/* Modal container (hidden by default) */
+/* Modal container (hidden by default) */
+/* Centered modal with white, rounded background */
+#dynamicContent {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9001;
+  width: 80%;
+  max-width: 600px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  display: none; /* Hidden by default */
+  max-height: 80%;
+  overflow-y: auto;
+}
+
+#dynamicContent img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Common styles for close, download, and share buttons */
+/* Common styles for close, download, and share buttons */
+/* Common styles for close, download, and share buttons */
+/* Common styles for close, download, and share buttons */
+.close-button,
+.download-button,
+.share-button {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* Position the close (X) button */
+.close-button {
+  right: 10px;
+}
+
+/* Position the download button with increased spacing */
+.download-button {
+  right: 90px;
+}
+
+/* Position the share button with increased spacing */
+.share-button {
+  right: 170px;
+}
+/*  Stuff for the slideshow below*/
+
+
+.mySlides {display: none}
+.slide-img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.slide-dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.slide-active, .slide-dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.slide-fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
