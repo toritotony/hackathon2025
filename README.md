@@ -1,4 +1,4 @@
-Submission for 2025 Cal Poly Humboldt Hackathon for Social Good
+Submission for the 2025 Cal Poly Humboldt Hackathon for Social Good
 
 ### See PDF for more details
 
