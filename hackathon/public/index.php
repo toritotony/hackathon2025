@@ -13,27 +13,32 @@
 <head>  
   <title>Conserved Properties – Northcoast Regional Land Trust</title>
   <meta charset="utf-8">
+<!-- change path to stylesheet -->
   <link href="style.css" rel="stylesheet" type="text/css">
   <!-- You can also include the updated CSS snippet here in a <style> block if desired -->
 </head>
 <body>
   <header>
     <a href="https://ncrlt.org/" class="logo-link">
+      <!-- change path to logoImg -->
       <img src="logoImg/2-lines-color-transparent.png" alt="Northcoast Regional Land Trust Logo">
     </a>
     <div>
       <a href="https://www.facebook.com/northcoastregionallandtrust" target="_blank">
         <button class="social-button">
+          <!-- change path to socialImg -->
           <img class="social-img" src="socialImg/facebook.png" alt="Facebook">
         </button>
       </a>
       <a href="https://www.instagram.com/northcoastregionallandtrust/" target="_blank">
         <button class="social-button">
+          <!-- change path to socialImg -->
           <img class="social-img" src="socialImg/instagram.png" alt="Instagram">
         </button>
       </a> 
       <a href="https://www.youtube.com/channel/UCqd29Ot2A1Ll79GdHY31_GQ/videos" target="_blank">
         <button class="social-button">
+          <!-- change path to socialImg -->
           <img class="social-img" src="socialImg/youtube.png" alt="YouTube">
         </button>
       </a>
@@ -132,7 +137,7 @@
 
   <!-- Other dynamic content goes here -->
   </div>
-
+  <!-- change path to backgroundImg -->
   <div>
     <img class="banner" 
          src="backgroundImg/background.jpg" 
@@ -199,6 +204,8 @@
     <div id="map"></div>
   </div>
   <!-- flex end -->
+  <!-- change path to map.js -->
+
 <script src="map.js"></script>
 </body>
 </html>

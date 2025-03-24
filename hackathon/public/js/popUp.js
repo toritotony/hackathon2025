@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
       }
 
       console.log(`🟢 Fetching data for ID: ${easementId}`);
-
+      // change path for getEasement.php
       fetch('getEasement.php?id=' + encodeURIComponent(easementId))
           .then(response => response.text())
           .then(data => {
@@ -67,10 +67,12 @@ document.addEventListener('DOMContentLoaded', function () {
               }
 
               // Create the PDF URL (same as used for download)
+              // make path change to pdf.php
               const pdfUrl = `pdf.php?${params.toString()}`;
 
               // Set href for download button (calls pdf.php with params)
               downloadBtn.href = pdfUrl;
+              // make a path change to easement.pdf 
               downloadBtn.setAttribute('download', 'easement.pdf');
               dynamicContent.appendChild(downloadBtn);
 
