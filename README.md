@@ -40,7 +40,7 @@ The PHP backend fetches session-specific data on page load, ensuring users see t
 - **Interactive Map Web App:** [View Demo](https://nrs-projects.humboldt.edu/~dw251/hackathon/)
 - **Admin Portal for CRUD Operations:** [View Admin Portal](https://nrs-projects.humboldt.edu/~dw251/hackathon/admin)
 
-You can also find more details in our [Presentation PDF](docs/InteractiveMap.pdf).
+You can also find more details in our [Presentation PDF](hackathon/docs/InteractiveMap.pdf).
 
 ---
 
