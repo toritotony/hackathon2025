@@ -1,5 +1,6 @@
 <?php
-require 'pdfThings/fpdf.php'; // Ensure FPDF is in the "pdfThings" subdirectory
+//changed path to pdfThings/fpdf 
+require 'hacakthon/pdfThings/fpdf.php'; // Ensure FPDF is in the "pdfThings" subdirectory
 
 $pdf = new FPDF();
 $pdf->AddPage();
@@ -48,6 +49,7 @@ if (isset($_GET['image'])) {
 }
 
 // **Output PDF**
+// change path to easement.pdf
 $pdf->Output('D', 'easement.pdf'); // Force Download
 exit;
 ?>
